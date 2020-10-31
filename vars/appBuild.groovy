@@ -1,4 +1,7 @@
 def call ()
 {
-    buildHelper.compile()
+    node
+            {
+                buildHelper.compile()
+            }
 }
