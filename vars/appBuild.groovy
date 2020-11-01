@@ -2,5 +2,5 @@
 
 def call ()
 {
-    buildHelper().compile
+    buildHelper.compile
 }
