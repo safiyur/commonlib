@@ -2,6 +2,6 @@ def call ()
 {
     node
             {
-                buildHelper.compile()
+               new buildHelper.compile()
             }
 }

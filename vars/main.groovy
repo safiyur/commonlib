@@ -1,4 +1,4 @@
 def call ()
 {
-    appBuild()
+    new appBuild()
 }
