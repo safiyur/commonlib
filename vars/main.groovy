@@ -1,5 +1,6 @@
 #!groovy
 
+@NonCPS
 def call ()
 {
     node
