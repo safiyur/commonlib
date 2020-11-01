@@ -1,4 +1,6 @@
+#!groovy
+
 def call ()
 {
-    new appBuild()
+    appBuild()
 }
