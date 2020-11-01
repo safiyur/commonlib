@@ -1,7 +1,4 @@
-def call ()
-{
-    //new appBuild()
-    node
+node
     {
     stage("Compile") {
         steps {
@@ -9,4 +6,3 @@ def call ()
         }
     }
     }
-}
