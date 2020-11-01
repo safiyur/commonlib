@@ -1,4 +1,7 @@
-node
+def call ()
+{
+    //new appBuild()
+    node
     {
     stage("Compile") {
         steps {
@@ -6,3 +9,4 @@ node
         }
     }
     }
+}
