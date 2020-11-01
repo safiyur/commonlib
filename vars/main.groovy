@@ -1,4 +1,12 @@
 def call ()
 {
-    new appBuild()
+    //new appBuild()
+    node
+    {
+    stage("Compile") {
+        steps {
+            bat "./gradlew compileJava"
+        }
+    }
+    }
 }
