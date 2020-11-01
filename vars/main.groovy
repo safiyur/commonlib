@@ -1,7 +1,7 @@
 #!groovy
 
-def call ()
+def call (String name)
 {
-    echo "hello"
+    echo "hello $name"
     //appBuild()
 }
