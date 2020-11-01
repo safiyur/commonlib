@@ -2,5 +2,6 @@
 
 def call ()
 {
-    appBuild()
+    echo "hello"
+    //appBuild()
 }
