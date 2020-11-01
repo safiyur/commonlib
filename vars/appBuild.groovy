@@ -1,5 +1,4 @@
-@NonCPS
 def build()
 {
-    buildHelper.compile
+    buildHelper.compile()
 }

@@ -1,5 +1,4 @@
-@NonCPS
 def call ()
 {
-    appBuild.build
+    appBuild.build()
 }
