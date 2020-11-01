@@ -2,6 +2,6 @@ def call ()
 {
     node
             {
-                echo "hello main"
+                buildHelper.compile()
             }
 }
