@@ -1,7 +1,13 @@
 #!groovy
 
-def call (String name)
+def call ()
 {
-    echo "hello $name"
-    //appBuild()
+    node
+            {
+                stage("Compile") {
+                    steps {
+                        bat "./gradlew compileJava"
+                    }
+                }
+            }
 }
