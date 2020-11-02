@@ -1,4 +1,6 @@
 def compile()
 {
-    bat "./gradlew compileJava"
+    stage("compile") {
+        bat "./gradlew compileJava"
+    }
 }
