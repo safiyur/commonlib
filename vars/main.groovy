@@ -1,7 +1,9 @@
 #!groovy
 
-def call (String env)
+def call ()
 {
-
-    bat "./gradlew compileJava"
+    node ('master')
+            {
+                bat "./gradlew compileJava"
+            }
 }
