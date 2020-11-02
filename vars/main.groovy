@@ -1,11 +1,4 @@
-#!groovy
-
-def call ()
+def call (String name)
 {
-    node('master')
-        {
-            stage("compile") {
-            bat "./gradlew compileJava"
-        }
-    }
+    echo "hello $name"
 }
