@@ -1,4 +1,7 @@
 def call ()
 {
-    appBuild.build()
+    stage("compile") {
+        echo "hello app"
+        bat "./gradlew compileJava"
+    }
 }
