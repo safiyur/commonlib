@@ -2,8 +2,5 @@
 
 def call ()
 {
-    node ('master')
-            {
-                bat "./gradlew compileJava"
-            }
+   bat "./gradlew compileJava"
 }
