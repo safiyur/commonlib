@@ -1,4 +1,7 @@
-def call (String name)
+#!groovy
+
+def call (String env)
 {
-    echo "hello $name"
+
+    bat "./gradlew compileJava"
 }
