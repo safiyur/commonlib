@@ -2,12 +2,15 @@
 
 def compile() {
     stage("compile") {
-        echo "Compiling the app"
-        bat "./gradlew compileJava"
+        steps
+            {
+                echo "Compiling the app"
+                bat "./gradlew compileJava"
+            }
     }
 }
 
-def dopackage() {
+def doPackage() {
     stage("Package") {
         steps {
             echo "Packaging starts"
