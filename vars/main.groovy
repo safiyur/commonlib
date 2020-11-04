@@ -1,6 +1,10 @@
 #!groovy
 
-def call ()
-{
-   bat "./gradlew compileJava"
+def call() {
+    node {
+        stage('compile')
+                {
+                    bat "./gradlew compileJava"
+                }
+    }
 }
