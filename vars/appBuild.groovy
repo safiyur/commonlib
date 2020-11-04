@@ -1,4 +1,8 @@
-def build()
-{
-    buildHelper.compile()
+#!groovy
+
+def build() {
+    node
+            {
+                buildHelper.compile()
+            }
 }

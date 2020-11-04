@@ -1,15 +1,6 @@
 #!groovy
 
-def call() {
-    echo "in constructor"
-}
-
-def compile()
+def genericBuild()
 {
-    node {
-        stage('compile')
-                {
-                    bat "./gradlew compileJava"
-                }
-    }
+    appBuild.build()
 }
