@@ -10,6 +10,6 @@ def build() {
                 buildHelper.deployToStage()
                 buildHelper.cleanup()*/
 
-                build '../check/master'
+                build 'check'
             }
 }
