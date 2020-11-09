@@ -3,11 +3,13 @@
 def build() {
     node
             {
-                buildHelper.compile()
+               /* buildHelper.compile()
                 buildHelper.doPackage()
                 buildHelper.buildImage()
                 buildHelper.doPush()
                 buildHelper.deployToStage()
-                buildHelper.cleanup()
+                buildHelper.cleanup()*/
+
+                build 'safiyur/check/master'
             }
 }
