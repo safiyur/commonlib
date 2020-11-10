@@ -13,7 +13,7 @@ def build() {
                 //build (job: 'check')
 
                 def paramList = ['foo','bar']
-                build (job: 'check', parameters: [list(name: 'HELLO', value: paramList)])
+                build (job: 'check', parameters: [List(name: 'HELLO', value: paramList)])
 
             }
 }
