@@ -12,7 +12,9 @@ def build() {
 
                 //build (job: 'check')
 
-                def paramList = ['foo','bar']
+                List <String> paramList = new ArrayList <String> ()
+                paramList.add("foo")
+                paramList.add("bar")
                 build (job: 'check', parameters: [list(name: 'HELLO', value: paramList)])
 
             }
