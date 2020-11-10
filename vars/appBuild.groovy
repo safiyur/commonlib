@@ -12,10 +12,11 @@ def build() {
 
                 //build (job: 'check')
 
-                List <String> paramList = new ArrayList <String> ()
-                paramList.add("foo")
-                paramList.add("bar")
-                build (job: 'check', parameters: [list(name: 'HELLO', value: paramList)])
+                List<ParameterValue> newParams = [
+                        new StringParameterValue('ENV', "foo"),
+                        new StringParameterValue('ENV_NO', "bar")
+                ]
+                build (job: 'check', parameters: newParams)
 
             }
 }
