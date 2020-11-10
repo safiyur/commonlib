@@ -10,8 +10,8 @@ def build() {
                 buildHelper.deployToStage()
                 buildHelper.cleanup()*/
 
-                build (job: 'check')
-                //build (job: 'check', parameters: [string(name: 'HELLO', value: 'hello param')])
+                //build (job: 'check')
+                build (job: 'check', parameters: [string(name: 'HELLO', value: 'hello param')])
 
             }
 }
