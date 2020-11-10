@@ -14,7 +14,7 @@ def build() {
                 buildHelper.cleanup()*/
 
                 //build (job: 'check')
-                build (job: 'check', parameters: [string(name: 'HELLO', value: String.valueOf(PARAMETER01))])
+                build (job: 'check', parameters: [string(name: 'HELLO', value: "hello")])
 
             }
 }
