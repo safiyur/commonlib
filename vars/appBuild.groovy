@@ -12,11 +12,8 @@ def build() {
 
                 //build (job: 'check')
 
-                List<ParameterValue> newParams = [
-                        new StringParameterValue('ENV', "foo"),
-                        new StringParameterValue('ENV_NO', "bar")
-                ]
-                build (job: 'check', parameters: newParams)
+               String params = "foo,bar"
+                build (job: 'check', parameters:[string(name:'paramList',value:params)])
 
             }
 }
