@@ -12,7 +12,7 @@ def build() {
 
                 //build (job: 'check')
 
-               String params = "foo"
+               String params = "foo,bar"
                 build (job: 'check', parameters:[string(name:'HELLO',value:params)])
 
             }
